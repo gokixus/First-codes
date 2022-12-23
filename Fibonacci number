@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int fib( int n )
+{
+	if ( n == 1 || n== 0)
+	    return (n);
+	else
+	    return fib(n-1) + fib(n-2);
+}
+int main() 
+{
+	int sayi;
+	printf("Bir tam sayiyi giriniz: ");
+	scanf("%d", &sayi);
+	
+	printf("\n\n%d. sayisinin fib sayisi: %d'dir.\n\n\n\n", sayi, fib(sayi));
+	return 0;
+}
